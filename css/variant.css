@@ -1,0 +1,26 @@
+#variant-size span.size {
+  position: relative;
+}
+#variant-size span.size label {
+  font-size: 11px;
+  color: #888888;
+  border: 1px solid #cccccc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#variant-size span.size input {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  width: 41px;
+  height: 41px;
+  z-index: 2;
+  cursor: pointer;
+}
+#variant-size span.size input:checked + label {
+  border-color: #222222;
+  border-width: 2px;
+}

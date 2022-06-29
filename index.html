@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR Frontend Developer Technical Test</title>
+  <link rel="preload stylesheet" href="css/style.css" as="style">
+  <link rel="preload stylesheet" href="css/variant.css" as="style">
+</head>
+<body class="mr-font-sans-serif">
+  <div class="mr-max-w-[1200px] mr-mx-[auto]" id="Main">
+    <header class="mr-py-2 mr-bg-ghost-white">
+      <div class="mr-max-w-[950px] mr-mx-[auto] mr-flex mr-justify-end">
+        <button class="mr-border-0 mr-bg-transparent mf-text-[11px] mr-text-taupe-grey">
+          <span>My Cart</span>
+          (<span class="js-cart-count">0</span>)
+        </button>
+      </div>
+    </header>
+
+    <section class="mr-mt-8" id="product">
+      <div class="product__container md:mr-grid md:mr-grid-cols-2 md:mr-gap-10 mr-max-w-[950px] mr-mx-[auto]">
+        <div class="product__image--wrapper">
+          <img class="product__image--element mr-w-[100%] js-product-image" src="" alt="" loading="lazy">
+        </div>
+        <div class="product__info--wrapper">
+          <h2 class="product__info--title mr-m-0 mr-mb-4 js-product-title"></h2>
+          <div class="product__info--price mr-py-2 mr-border-y-[1px] mr-border-x-0 mr-border-solid mr-border-y-ghost-white mr-mb-4">
+            <div class="price js-product-price mr-text-[14px] mr-font-bold"></div>
+          </div>
+          <div class="product__info--desc js-product-desc mr-mb-4"></div>
+          <div class="product__info--variant">
+            <div class="product__info--variant---radio">
+              <span class="mr-block mr-text-[11px] mr-font-bold mr-text-taupe-grey">SIZE<span class="mr-text-red">*</span> <span class="selected mr-font-bold nr-text-[14px] mr-text-dark-grey"></span></span>
+              <div class="js-product-size mr-mt-4 mr-flex mr-items-center mr-gap-[10px]" id="variant-size"></div>
+            </div>
+          </div>
+          <div class="product__info--button mr-mt-4">
+            <button class="mr-border-2 mr-px-4 mr-py-2 mr-bg-transparent mr-text-[14px] mr-font-bold hover:mr-bg-dark-grey hover:mr-text-white mr-transition mr-duration-200 mr-ease-in-out" type="submit">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/product.js" defer></script>
+</body>
+</html>
